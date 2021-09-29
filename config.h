@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 100;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "N/A";
@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	// battery
 	// {battery_perc, " 󰂂 %s% |", NULL},
 	// volume (might have to edit script a little to make it work)
-	{run_command, " 󰕾 %s |", "pamixer --get-volume-human"},
+	{ run_command, " 󰕾 %s |", "pamixer --get-volume-human"},
 	// date
 	{ datetime, " 󰃭 %s ",           "%A %d, %I:%M %p" }
 };
