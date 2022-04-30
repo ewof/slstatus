@@ -69,6 +69,7 @@ static const struct arg args[] = {
 	// volume (might have to edit script a little to make it work)
 	{ run_command, " 󰕾 %s |", "pamixer --get-volume-human"},
 	// date
-	{ datetime, " 󰃭 %s ",           "%A %d, %I:%M %p" }
+	{ datetime, " 󰃭 %s ",           "%A %d, %I:%M:%S %p" }
+
 };
 
