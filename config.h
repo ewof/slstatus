@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	// battery
 	// {battery_perc, " 󰂂 %s% |", NULL},
 	// volume (might have to edit script a little to make it work)
-	{ run_command, " 󰕾 %s |", "pamixer --get-volume-human"},
+	{ run_command, " 󰕾 %s |", "pulsemixer --get-volume | awk '{print $1}'"},
 	// date
 	{ datetime, " 󰃭 %s ",           "%A %d, %I:%M:%S %p" }
 
